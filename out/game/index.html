@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starlight Shepherd</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #070a20; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+  #wrap { text-align: center; }
+  canvas { display: block; width: min(960px, 96vw); height: auto; border-radius: 12px;
+    box-shadow: 0 0 60px rgba(179, 136, 255, 0.35); background: #0b1030; }
+  p { color: #9fb4ff; font-size: 13px; margin: 10px 0 0; }
+  button { margin-top: 8px; background: #ffd678; color: #3a2b00; border: 0; border-radius: 8px;
+    padding: 6px 14px; font-weight: 700; cursor: pointer; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <p>Starlight Shepherd — WASD move · Mouse aim · Click / Space shoot · Shift dash · M mute</p>
+  <button id="mute" type="button">Mute sound</button>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
